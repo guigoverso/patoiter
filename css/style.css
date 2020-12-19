@@ -25,9 +25,9 @@ header {
 }
 
 .vertical-menu-user {
-    background-image: url('../img/user.png');
     background-size: cover;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .vertical-menu-user:hover .vertical-menu-user-upload {
@@ -55,6 +55,10 @@ header {
 }
 
 /*==============================================================================*/
+
+.default-pic {
+    background-image: url(../img/user.png)
+}
 
 .img-size-50x50 {
     width: 50px;

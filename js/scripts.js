@@ -21,9 +21,18 @@ function changeBackground(newBackground) {
 function changeBackgroundImage() {
     const body = document.querySelector('body')
     const src = prompt('Digite a url da image')
-    console.log(src)
     if(src) {
         body.style.backgroundImage = `url(${src})`
         document.getElementById('logo').src = '../img/logo-white.png'
     }
+}
+
+function changeProfileImage() {
+    const profileImage = document.getElementById('profile-image')
+    const src = prompt('Digite a url da imagem para foto de perfil')
+    if(src) {
+        profileImage.classList.remove('default-pic')
+        profileImage.style.backgroundImage = `url(${src})`
+    }
+    console.log(profileImage.style.backgroundImage)
 }
