@@ -3,6 +3,8 @@ body {
     grid-template-columns: 100px auto;
     grid-template-areas: "navbar content";
     min-height: 100vh;
+    background-attachment: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -41,7 +43,6 @@ header {
     display: none;
     border-radius: 50%;
 }
-
 
 .vertical-menu-bg-colors {
     margin-top: 10px;
