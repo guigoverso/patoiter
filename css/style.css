@@ -25,6 +25,7 @@ header {
 .vertical-menu-user {
     background-image: url('../img/user.png');
     background-size: cover;
+    cursor: pointer;
 }
 
 .vertical-menu-user:hover .vertical-menu-user-upload {
@@ -49,6 +50,7 @@ header {
 .vertical-menu-bg-colors ul li {
     display: block;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 /*==============================================================================*/
