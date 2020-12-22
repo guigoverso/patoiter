@@ -54,6 +54,67 @@ header {
     cursor: pointer;
 }
 
+.posts {
+    padding: 0 0.25rem;
+}
+
+.new-post {
+    width: 100%;
+}
+
+.new-post-name-input, .post-name-input:disabled {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    color: #D9D9D9;
+}
+
+.new-post-name-input-title, .post-name-input-title:disabled {
+    font-size: 20px;
+    font-weight: bold;
+    color: #363636;
+}
+
+.new-post-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    height: 120px;
+    resize: none;
+}
+
+.new-post-textarea::placeholder {
+    color: #D9D9D9;
+}
+
+/*#new-post-image-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#new-post-image-area img {
+   align-self: stretch;
+   justify-self: stretch;
+   object-fit: cover;
+}*/
+
+#new-post-image-area {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+#new-post-image-area img{
+    align-self: stretch;
+    object-fit: cover;
+}
+#new-post-image-area img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
 /*==============================================================================*/
 
 .default-pic {
@@ -77,6 +138,22 @@ header {
 
 .rounded {
     border-radius: 50%;
+}
+
+.b-radius-card {
+    border-radius: 2rem;
+}
+
+.p-top-20px {
+    padding-top: 20px;
+}
+
+.color-gray {
+    color: #D9D9D9;
+}
+
+.border-none {
+    border: none;
 }
 
 .background-transparent {

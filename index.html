@@ -6,8 +6,11 @@
     <title>PaToiter</title>
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <script src="js/bulmaBurger.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/newPost.js"></script>
+    <script src="https://kit.fontawesome.com/03998ec129.js" crossorigin="anonymous"></script>
 </head>
 <body class="background-light-green">
     <header class="background-transparent">
@@ -41,5 +44,38 @@
             </div>
         </nav>
     </header>
+    <main class="posts">
+        <section class="p-top-20px new-post">
+            <div class="card b-radius-card">
+                <div class="card-content">                   
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="img/user.png" alt="user pic" class="img-size-50x50 user-image">
+                        </div>
+                        <div class="media-content">
+                            <input type="text" class="new-post-name-input new-post-name-input-title" value="Your User Name" disabled>
+                            <div>
+                                <span><i class="fas fa-at color-gray"></i></span>
+                                <input type="text" class="new-post-name-input" value="yourusername" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <textarea class="new-post-textarea" placeholder="Se expresse a vontade. Esse mundo é seu."></textarea>
+                        </form>
+                        <div id="new-post-image-area">
+                        </div>
+                    </div>
+                    <div class="card-footer border-none">
+                        <div>
+                            <img src="img/image.png" onmousedown="addImage()">
+                            <span id="add-image-text">img.jpg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

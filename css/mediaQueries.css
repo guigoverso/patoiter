@@ -1,0 +1,16 @@
+@media only screen and (min-width: 769px) {
+    .new-post {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .posts {
+        padding: 0 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .posts {
+        padding: 0 6rem;
+    }
+}
