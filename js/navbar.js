@@ -12,9 +12,9 @@ function changeBackground(newBackground) {
     body.classList.add(newBackground)
 
     if(newBackground === 'background-white') {
-        document.getElementById('logo').src = '../img/logo-blue.png'
+        document.getElementById('logo').src = 'img/logo-blue.png'
     } else {
-        document.getElementById('logo').src = '../img/logo-white.png'
+        document.getElementById('logo').src = 'img/logo-white.png'
     }
 }
 
@@ -23,7 +23,7 @@ function changeBackgroundImage() {
     const src = prompt('Digite a url da image')
     if(src) {
         body.style.backgroundImage = `url(${src})`
-        document.getElementById('logo').src = '../img/logo-white.png'
+        document.getElementById('logo').src = 'img/logo-white.png'
     }
 }
 
