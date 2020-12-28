@@ -1,22 +1,27 @@
 body {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 50px auto;
     grid-template-areas: "navbar content";
     min-height: 100vh;
-    background-attachment: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
     grid-area: "navbar";
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .vertical-menu {
+    position: fixed;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background-color: red !important;*/
     padding-top: 20px;
 }
 
@@ -58,18 +63,19 @@ header {
     padding: 0 0.25rem;
 }
 
-.new-post {
+.post-width {
     width: 100%;
 }
 
-.new-post-name-input, .post-name-input:disabled {
+.new-post-name-input, .post-name-input:disabled, .post-user {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     outline: none;
     color: #D9D9D9;
+    font-size: 13px;
 }
 
-.new-post-name-input-title, .post-name-input-title:disabled {
+.new-post-name-input-title, .post-name-input-title:disabled, .post-username {
     font-size: 20px;
     font-weight: bold;
     color: #363636;
@@ -80,39 +86,53 @@ header {
     border: none;
     outline: none;
     font-size: 18px;
-    height: 120px;
+    height: 80px;
     resize: none;
+    font-size: 16px;
 }
 
 .new-post-textarea::placeholder {
     color: #D9D9D9;
 }
 
-/*#new-post-image-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.new-post-textarea::-webkit-scrollbar {
+    display: none;
 }
 
-#new-post-image-area img {
-   align-self: stretch;
-   justify-self: stretch;
-   object-fit: cover;
-}*/
+.new-post-textarea {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
-#new-post-image-area {
+#new-post-image-area, .post-image-area {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: nowrap;
 }
 
-#new-post-image-area img{
+#new-post-image-area, .post-image-area img{
     align-self: stretch;
     object-fit: cover;
 }
 #new-post-image-area img:hover {
     opacity: 0.2;
     cursor: pointer;
+}
+
+#posts-area {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.post {
+    margin-bottom: 20px !important;
+}
+
+.post-date-time {
+    font-size: 10px;
+    color: #D9D9D9;
+    letter-spacing: 2px;
 }
 
 /*==============================================================================*/
@@ -134,6 +154,23 @@ header {
 .img-size-w-30 {
     width: 30px;
     height: auto;
+}
+
+.img-size-responsive {
+    width: 40px;
+    height: 40px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 30%;
+    height: 3px;
 }
 
 .rounded {
