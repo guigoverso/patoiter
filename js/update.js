@@ -3,8 +3,8 @@ class Update {
         const userImageElements = Object.values(document.getElementsByClassName('user-image'))
         
         userImageElements.forEach(element => {
-            element.src = user.profilePic
             element.style.backgroundImage = `url(${user.profilePic})`
+            element.classList.add('rounded')
         })
     }
 

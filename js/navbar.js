@@ -45,3 +45,8 @@ function changeProfileImage() {
         update.profilePic(user)
     }
 }
+
+function deleteAllPosts() {
+    document.querySelector('#posts-area').innerHTML = ''
+    document.querySelector('.hr').style.display = 'none'
+}

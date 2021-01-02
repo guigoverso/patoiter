@@ -73,10 +73,12 @@ header {
     outline: none;
     color: #D9D9D9;
     font-size: 13px;
+    width: 80%;
+    display: inline-block;
 }
 
 .new-post-name-input-title, .post-name-input-title:disabled, .post-username {
-    font-size: 20px;
+    font-size: 13px;
     font-weight: bold;
     color: #363636;
 }
@@ -95,15 +97,6 @@ header {
     color: #D9D9D9;
 }
 
-.new-post-textarea::-webkit-scrollbar {
-    display: none;
-}
-
-.new-post-textarea {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
 #new-post-image-area, .post-image-area {
     display: flex;
     flex-direction: row;
@@ -111,13 +104,14 @@ header {
     flex-wrap: nowrap;
 }
 
-#new-post-image-area, .post-image-area img{
-    align-self: stretch;
-    object-fit: cover;
-}
 #new-post-image-area img:hover {
     opacity: 0.2;
     cursor: pointer;
+}
+
+.new-post-image, .post-image {
+    align-self: stretch;
+    object-fit: cover;
 }
 
 #posts-area {
@@ -131,11 +125,21 @@ header {
 
 .post-date-time {
     font-size: 10px;
-    color: #D9D9D9;
+    color: #9b9b9b;
     letter-spacing: 2px;
 }
 
+.user-image {
+    object-fit: cover;
+    background-image: url(../img/user.png);
+    background-size: cover;
+}
+
 /*==============================================================================*/
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
 
 .default-pic {
     background-image: url(../img/user.png)
@@ -171,6 +175,7 @@ header {
     margin-right: auto;
     opacity: 30%;
     height: 3px;
+    display: none;
 }
 
 .rounded {
@@ -228,4 +233,8 @@ header {
 .background-image {
     background-image: url(../img/image.png);
     background-size: cover;
+}
+
+.card-content {
+    padding: 0.5rem;
 }

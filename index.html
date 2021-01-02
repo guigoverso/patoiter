@@ -26,7 +26,7 @@
             </div>
             <div class="vertical-menu-item">
                 <div class="img-size-responsive vertical-menu-user default-pic user-image" onmousedown="changeProfileImage()">
-                    <div class="img-size-50x50 vertical-menu-user-upload"></div>
+                    <div class="img-size-responsive vertical-menu-user-upload"></div>
                 </div>
             </div>
             <div class="vertical-menu-item">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="vertical-menu-item">
-                <img src="img/trash.png" alt="Clear patoites" class="img-size-w-30" onmouseover="changeImage(this, 'img/trash-open.png')">
+                <img src="img/trash.png" alt="Clear patoites" class="img-size-w-30" onmouseover="changeImage(this, 'img/trash-open.png')" onmousedown="deleteAllPosts()">
             </div>
         </nav>
     </header>
@@ -54,13 +54,13 @@
                 <div class="card-content">                   
                     <div class="media">
                         <div class="media-left">
-                            <img src="img/user.png" alt="user pic" class="img-size-50x50 user-image">
+                            <div class="img-size-responsive user-image"></div>
                         </div>
                         <div class="media-content" style="position: relative;">
-                            <input type="text" class="new-post-name-input new-post-name-input-title" value="Your Username" onmousedown="authorizeButtonToEdit(this)" onfocusout="changeUserName('display', this.value)" id="userDisplayName" readonly>
+                            <input type="text" class="new-post-name-input new-post-name-input-title" value="Your Username" onmousedown="authorizeButtonToEdit(this)" onfocusout="changeUserName('display', this)" id="userDisplayName" readonly>
                             <div>
                                 <span><i class="fas fa-at color-gray"></i></span>
-                                <input type="text" class="new-post-name-input" value="yourusername" onmousedown="authorizeButtonToEdit(this)" onfocusout="changeUserName('user', this.value)" id="userName" readonly>
+                                <input type="text" class="new-post-name-input" value="yourusername" onmousedown="authorizeButtonToEdit(this)" onfocusout="changeUserName('user', this)" id="userName" readonly>
                             </div>
                         </div>
                     </div>
@@ -82,65 +82,6 @@
         </section>
         <hr class="hr">
         <section id="posts-area">
-            <article class="post post-width" id="postModel">
-                <div class="card b-radius-card">
-                    <div class="card-content">                   
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="img/user.png" alt="user pic" class="img-size-50x50 user-image">
-                            </div>
-                            <div class="media-content">
-                                <p class="post-username">Your Username</p>
-                            <div>
-                                <i class="fas fa-at color-gray"></i>
-                                <span class="post-user">yourusername</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="content m-0">
-                        <p>
-                            Post 1
-                        </p>
-                        <div class="post-image-area">
-                        </div>
-                    </div>
-                    <div class="card-footer border-none">
-                        <div class="card-footer-item p-0 is-justify-content-space-between is-align-content-center">
-                            <span class="post-date-time is-align-self-flex-end">28/12/2020 14:37</span>
-                            <img src="img/trash.png" alt="Clear patoites" class="img-size-w-30" onmouseover="changeImage(this, 'img/trash-open.png')">
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="post post-width">
-                <div class="card b-radius-card">
-                    <div class="card-content">                   
-                        <div class="media">
-                            <div class="media-left">
-                                <img src="img/user.png" alt="user pic" class="img-size-50x50 user-image">
-                            </div>
-                            <div class="media-content">
-                                <p class="post-username">Your Username</p>
-                            <div>
-                                <i class="fas fa-at color-gray"></i>
-                                <span class="post-user">yourusername</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="content m-0">
-                        <p>
-                            Post 2
-                        </p>
-                        <div class="post-image-area">
-                        </div>
-                    </div>
-                    <div class="card-footer border-none">
-                        <div class="card-footer-item p-0 is-justify-content-flex-end">
-                            <img src="img/trash.png" alt="Clear patoites" class="img-size-w-30" onmouseover="changeImage(this, 'img/trash-open.png')">
-                        </div>
-                    </div>
-                </div>
-            </article>
         </section>
     </main>
 </body>

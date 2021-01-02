@@ -1,0 +1,47 @@
+[33mcommit 63ab03a2a5f64d8445a0fbb2e8576b23db0e7fe2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Mon Dec 28 15:51:29 2020 -0300
+
+    Inclusão da funcionaldiade de adicionar nova postagem. Ainda falta poder excluir as postagens individualmente e geral e também fazer a barra de separação sumir quando não houver nenhuma postagem.
+
+[33mcommit 0b8db100a855e45cbed6b3ec20dc8ebebdc76edd[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Tue Dec 22 16:19:38 2020 -0300
+
+    Correção do bug quando trocava de background a logo sumia
+
+[33mcommit e2f353a45b9854aac53057576e67a62628a408e0[m[33m ([m[1;31morigin/newPostArea[m[33m)[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Tue Dec 22 16:16:59 2020 -0300
+
+    Adicionado área para criar novas postagens e colocar imagens
+
+[33mcommit ddc4d40eaf7e2735a60cb15d4021d1b3b5b8d22a[m[33m ([m[1;31morigin/navbar[m[33m)[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Sat Dec 19 15:04:26 2020 -0300
+
+    Adicionado mudança da imagem de perfil
+
+[33mcommit e16be18d7983199e438990540bce921552014ec2[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Sat Dec 19 14:45:32 2020 -0300
+
+    Inclusão do botão de colocar uma imagem da internet como wallpaper
+
+[33mcommit 5bbe4d2edc4111c1407fb4278d8bd919752cb421[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Sat Dec 19 12:08:44 2020 -0300
+
+    Inclusão da alteração da cor do background da página
+
+[33mcommit f2ee56e5076025bda1f0e40e93d10c9d46cdb4d9[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Sat Dec 19 11:37:44 2020 -0300
+
+    Adicionado troca da imagem do cursor ao passar sobre os ícones da navbar
+
+[33mcommit e50bb9e5cbf08fc7a0a519ecc7a6e89d1f0db8d1[m
+Author: Guilherme Cabral <guilhermeoccorona@gmail.com>
+Date:   Sat Dec 19 11:17:51 2020 -0300
+
+    Inclusão da navbar, mas ainda sem funcionalidade
